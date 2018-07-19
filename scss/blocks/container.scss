@@ -1,0 +1,135 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container--main-menu{
+  order: 2;
+  margin: 0;
+  flex-direction: row;
+}
+.container--item-top{
+  flex-direction: row;
+  picture{
+    width: 75px;
+    height: 23px;
+  }
+}
+.container--hand{
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: stretch;
+}
+////form////
+.container--submit{
+  order: 6;
+}
+////photos////
+.container--photos{
+  padding-bottom: 80px;
+}
+
+@media (min-width: 700px) {
+  .container{
+    width: 700px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container--main-menu{
+    margin: 0 auto;
+    order: 2;
+  }
+  .container--hand{
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+  }
+  .container--product-info, .container--effect, .container--contacts, .container--footer{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .container--contacts{
+    flex-wrap: wrap;
+  }
+  ////form////
+  .container--user-info,
+  .container--grey-border,
+  .container--application-info,
+  .container--user-contacts,
+  .container--submit{
+    width: 620px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container--grey-border{
+    border: 2px solid #e5e5e5;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .container--application-info{
+    padding-bottom: 20px;
+  }
+  .container--submit{
+    order: 6;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  ////photos////
+  .container--gallery{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container--loader{
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+  .container--hand, .container--contacts{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  ////form////
+  .container--user-info, .container--application-info{
+    width: auto;
+  }
+  .container--application-info{
+    padding-bottom: 30px;
+  }
+  .container--user-contacts{
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container--user-achievements{
+    display: flex;
+    flex-direction: row;
+  }
+  ////photos////
+  .container--photos{
+    padding-bottom: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .container--gallery{
+    margin-bottom: -55px;
+  }
+  .container--loader{
+    background-color: #f2f2f2;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}

@@ -1,0 +1,121 @@
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__prev, .navigation__next{
+  display: none;
+}
+.navigation--comments{
+  margin-bottom: 40px;
+}
+.navigation__dot{
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #bec2c7;
+  margin-right: 19px;
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover{
+    cursor: pointer;
+    background-color: #888c91;
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}
+.navigation__dot--last{
+  margin-right: 0;
+}
+.navigation__dot--active{
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  border: 3px solid black;
+  &:hover{
+    background-color: white;
+  }
+  &:active{
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  .navigation--comments{
+    order: 3;
+    margin-bottom: 25px;
+  }
+  .navigation--table{
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation--comments{
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    .navigation__dot{
+      display: none;
+    }
+    .navigation__prev, .navigation__next{
+      display: block;
+      position: absolute;
+      height: 41px;
+      width: 26px;
+      cursor: pointer;
+      &:hover::before, &:hover::after{
+        background-color: #7e868f;
+      }
+      &:active{
+        opacity: 0.3;
+      }
+    }
+    .navigation__prev{
+      left: 0;
+    }
+    .navigation__next{
+      right: 0;
+    }
+    .navigation__prev::before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 10px;
+      height: 2px;
+      width: 25px;
+      background-color: #bec2c7;
+      transform: rotate(-45deg);
+    }
+    .navigation__prev::after{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 26px;
+      height: 2px;
+      width: 25px;
+      background-color: #bec2c7;
+      transform: rotate(45deg);
+    }
+    .navigation__next::before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 26px;
+      height: 2px;
+      width: 25px;
+      background-color: #bec2c7;
+      transform: rotate(-45deg);
+    }
+    .navigation__next::after{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 10px;
+      height: 2px;
+      width: 25px;
+      background-color: #bec2c7;
+      transform: rotate(45deg);
+    }
+  }
+}

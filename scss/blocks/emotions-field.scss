@@ -1,0 +1,51 @@
+.emotions-field{
+  order: 5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  legend{
+    padding-left: 0;
+    margin-bottom: 12px;
+  }
+  textarea{
+    resize: none;
+    min-height: 200px;
+    padding-right: 15px;
+    &:hover{
+      border: 2px solid #283645;
+    }
+    &:focus{
+      border: 2px solid #d22856;
+    }
+  }
+}
+@media (min-width: 700px) {
+  .emotions-field{
+    order: 5;
+    padding-top: 65px;
+    padding-bottom: 70px;
+    legend{
+      position: relative;
+      bottom: 16px;
+      background-color: white;
+      margin: 0 auto 20px auto;
+    }
+    textarea{
+      resize: none;
+      overflow-x: hidden;
+      min-height: 190px;
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .emotions-field{
+    legend{
+      margin-bottom: 10px;
+    }
+    textarea{
+      width: 90%;
+      min-height: 120px;
+      margin: 0 auto 50px auto;
+    }
+  }
+}

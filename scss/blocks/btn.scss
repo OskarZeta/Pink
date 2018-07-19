@@ -1,0 +1,66 @@
+.btn{
+  display: block;
+}
+.btn--header{
+  width: 280px;
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 16px 0;
+  border: 3px solid white;
+  border-radius: 30px;
+  margin: 0 auto 30px auto;
+  &:hover{
+    color: #d12856;
+    background-color: white;
+    &:active{
+      color: rgba(209, 40, 86, 0.5);
+    }
+  }
+}
+.btn--submit{
+  width: 280px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 0;
+  border-radius: 2px;
+  background-color: #2aab6d;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  &:hover{
+    background-color: #1c9b5e;
+  }
+  &:active{
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  &:disabled{
+    background-color: #e5e5e5;
+  }
+}
+@media (min-width: 700px) {
+  .btn--header{
+    width: 300px;
+    margin-bottom: 45px;
+  }
+  .btn--submit{
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .btn--header{
+    font-size: 21px;
+    line-height: 18px;
+    margin-bottom: 70px;
+  }
+  .btn--submit{
+    margin-bottom: 0;
+  }
+}

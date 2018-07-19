@@ -1,0 +1,56 @@
+.application-field{
+  order: 4;
+  background-color: #f2f2f2;
+  padding-top: 35px;
+  padding-bottom: 7px;
+  legend{
+    margin-bottom: 35px;
+  }
+  label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    cursor: pointer;
+    &:hover{
+      .form-contest__radiobtn{
+        border: 2px solid #283645;
+      }
+    }
+    &:active{
+      .form-contest__radiobtn{
+        border: 2px solid #d22856;
+      }
+    }
+  }
+}
+@media (min-width: 700px) {
+  .application-field{
+    order: 2;
+    background-color: white;
+    margin-bottom: 30px;
+    legend{
+      margin: 0 auto 25px auto;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .application-field{
+    display: inline-block;
+    width: calc(50% - 35px);
+    padding-bottom: 0;
+    padding-top: 25px;
+    margin-bottom: 40px;
+    float: right;
+    &::after{
+      display: block;
+      content: "";
+      clear: both;
+    }
+    legend{
+      margin: 0 auto 15px auto;
+    }
+    label{
+      width: 66%;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.teaser{
+  min-width: 320px;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 29px;
+  text-align: center;
+  color: #283645;
+  padding-top: 15px;
+  background-color: white;
+}
+.teaser--upper{
+  padding-top: 40px;
+}
+.teaser__lower-part{
+  padding-bottom: 30px;
+}
+.teaser--lower{
+  padding-top: 43px;
+  padding-bottom: 30px;
+}
+.teaser--upper::after{
+  content: "";
+  display: block;
+  border-left: 95vw solid transparent;
+  border-bottom: 32px solid #f2f2f2;
+}
+.teaser--contest, .teaser--photos{
+  padding-top: 45px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.teaser--photos{
+  padding: 45px 35px 50px 35px;
+}
+.teaser--photos-lower{
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+@media (min-width: 700px) {
+  .teaser{
+    font-size: 40px;
+    line-height: 48px;
+    padding-top: 25px;
+    br{
+      display: none;
+    }
+  }
+  .teaser--upper{
+    padding-top: 45px;
+  }
+  .teaser--upper::after{
+    border-bottom: 60px solid #f2f2f2;
+  }
+  .teaser__lower-part{
+    padding: 0 60px 45px 60px;
+  }
+  .teaser--lower{
+    padding-top: 40px;
+    p{
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+  .teaser--contest, .teaser--photos{
+    padding-top: 90px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .teaser--contest{
+    p{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    p:last-child::after{
+      display: inline-block;
+      content: "Пожалуйста, заполните форму ниже:";
+    }
+  }
+  .teaser--photos{
+    padding-bottom: 75px;
+    padding-left: 70px;
+    padding-right: 70px;
+    br{
+      display: block;
+    }
+  }
+  .teaser--photos-lower{
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .teaser--upper{
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 65px;
+  }
+  .teaser--upper::after{
+    border-bottom: 80px solid #f2f2f2;
+  }
+  .teaser__lower-part{
+    padding-bottom: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .teaser--lower{
+    padding-top: 65px;
+    p{
+      font-size: 50px;
+      line-height: 60px;
+      padding: 0 25%;
+    }
+  }
+  .teaser--contest{
+    padding-bottom: 10px;
+    p{
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+  .teaser--photos {
+    padding-bottom: 90px;
+    p{
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+  }
+  .teaser--photos-lower {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+}

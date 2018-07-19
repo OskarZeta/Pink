@@ -1,0 +1,135 @@
+.gallery__item{
+  margin-bottom: 21px;
+  position: relative;
+  picture{
+    display: flex;
+    justify-content: center;
+  }
+}
+.gallery__commentary{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 auto;
+  color: #283645;
+}
+.gallery__commentary--best{
+  padding: 17px;
+}
+.gallery__marker-best{
+  position: absolute;
+  display: block;
+  width: 140px;
+  top: 0;
+  right: calc(50% - 140px);
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  color: white;
+  background-color: #d22856;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.gallery__commentary-wrapper{
+  padding: 18px;
+}
+.gallery__user-name{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.gallery__user-timing{
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.gallery__user-text{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.gallery__like-wrapper{
+  display: flex;
+  align-items: center;
+  span{
+    font-size: 12px;
+    line-height: 24px;
+    color: #d22856;
+    text-transform: uppercase;
+  }
+}
+.gallery__like{
+  margin-right: 20px;
+  width: 13px;
+  height: 12px;
+}
+@media (min-width: 700px) {
+  .gallery__item {
+    width: 300px;
+    margin-bottom: 17px;
+  }
+  .gallery__item--best {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .gallery__marker-best{
+    top: 55px;
+    right: 40px;
+  }
+  .gallery__commentary {
+    width: auto;
+  }
+  .gallery__commentary--best {
+    width: 620px;
+    padding: 25px 25px 10px 25px;
+    position: relative;
+    .gallery__like-wrapper {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+  }
+  .gallery__commentary-wrapper {
+    padding: 25px;
+  }
+  .gallery__user-text {
+    min-height: 50px;
+  }
+  .gallery__like-wrapper{
+    justify-content: space-between;
+  }
+  .gallery__like-counter-wrapper{
+    order: 0;
+    margin-right: 0;
+  }
+  .gallery__like{
+    order: 1;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery__item{
+    margin-bottom: 50px;
+  }
+  .gallery__item--best{
+    width: 1200px;
+  }
+  .gallery__marker-best{
+    right: 130px;
+  }
+  .gallery__commentary {
+    width: auto;
+  }
+  .gallery__commentary--best {
+    width: 940px;
+    .gallery__user-text{
+      min-height: unset;
+    }
+  }
+}

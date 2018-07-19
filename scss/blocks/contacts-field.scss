@@ -1,0 +1,115 @@
+.contacts-field{
+  order: 3;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  legend{
+    display: none;
+  }
+  span{
+    margin-bottom: 5px;
+  }
+  input{
+    &:hover{
+      border: 2px solid #283645;
+    }
+    &:focus{
+      border: 2px solid #d22856;
+    }
+  }
+}
+.contacts-field__container{
+  margin-bottom: 15px;
+}
+.contacts-field__icon{
+  display: none;
+}
+@media (min-width: 700px) {
+  .contacts-field{
+    order: 3;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    legend{
+      display: block;
+      margin: 0 auto 13px auto;
+    }
+    label{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      span::after{
+        display: block;
+        content: "Номер телефона";
+      }
+      &:last-child{
+        span::after{
+          display: block;
+          content: "Адрес почты";
+        }
+      }
+    }
+    span{
+      position: relative;
+      order: 2;
+      margin-left: 20px;
+      visibility: hidden;
+      &::after{
+        position: absolute;
+        top: -5px;
+        display: block;
+        visibility: visible;
+      }
+    }
+    input[type="text"]{
+      order: 1;
+      padding: 15px 0 15px 20px;
+      width: calc(100% - 60px);
+      border: 2px solid #e5e5e5;
+      &:hover{
+        border: 2px solid #283645;
+      }
+      &:focus{
+        border: 2px solid #d22856;
+      }
+    }
+  }
+  .contacts-field__container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contacts-field__icon{
+    display: flex;
+    width: 61px;
+    height: 64px;
+    background-color: #e5e5e5;
+    order: 2;
+    svg{
+      width: 20px;
+      height: 19px;
+      margin: 0 auto;
+      align-self: center;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-field{
+    padding-bottom: 35px;
+    legend{
+      margin-bottom: 10px;
+      width: 30%;
+    }
+    label{
+      display: inline-flex;
+      width: calc(50% - 35px);
+      margin-bottom: 10px;
+      &:last-child{
+        float: right;
+        &::after{
+          display: block;
+          content: "";
+          clear: both;
+        }
+      }
+    }
+  }
+}
