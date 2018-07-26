@@ -1,50 +1,23 @@
-.contacts__map-container{
+.contacts{
   position: relative;
-  height: 200px;
-  z-index: -1;
+}
+.contacts__map-container{
+  overflow: hidden;
 }
 .contacts__map{
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  img{
-    display: block;
-    width: 100%;
-  }
 }
-.contacts__map-marker{
-  width: 36px;
-  height: 36px;
-  background-color: white;
-  border-radius: 100%;
-  span{
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -8px;
-    margin-top: -8px;
-    width: 16px;
-    height: 16px;
-    background-color: #d22856;
-    border-radius: 100%;
-  }
-}
+
 .contacts__triangle{
   position: absolute;
-  top: 0;
   width: 100%;
+  margin-top: -1px;
   z-index: 1;
 }
 .contacts__wrapper{
   background-color: white;
   padding-top: 5px;
   padding-bottom: 15px;
-}
-.contacts__map-marker{
-  position: absolute;
-  left: calc(50% - 17px);
-  top: 48%;
 }
 .contacts__block{
   text-align: center;
@@ -87,19 +60,6 @@
       margin-bottom: 0;
     }
   }
-  .contacts__map-container{
-    height: 380px;
-  }
-  .contacts__map{
-    img{
-      position: relative;
-      top: 140px;
-    }
-  }
-  .contacts__map-marker{
-    top: auto;
-    bottom: 37%;
-  }
 }
 @media (min-width: 1200px) {
   .contacts__wrapper{
@@ -131,16 +91,5 @@
     p{
       margin-bottom: 0;
     }
-  }
-  .contacts__map-container{
-    height: 520px;
-  }
-  .contacts__map{
-    img{
-      top: 195px;
-    }
-  }
-  .contacts__map-marker{
-    bottom: 39%;
   }
 }
